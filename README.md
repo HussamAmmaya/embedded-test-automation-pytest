@@ -1,5 +1,27 @@
 # Arduino Serial Automation
 
+## Test Workflow
+```text
+Arduino UNO -> Serial Communication -> Python Script -> PASS/FAIL Evaluation -> CSV Report
+```
+
+The Arduino sends multiple signals over Serial:
+
+```text
+A0=523
+A1=410
+STATUS=OK
+````
+
+
+| Signal | Condition           | Result  |
+| ------ | ------------------- | ------- |
+| A0     | 300 <= value <= 700 | PASS    |
+| A1     | 200 <= value <= 600 | PASS    |
+| STATUS | value == OK         | PASS    |
+| Other  | unknown signal      | UNKNOWN |
+
+
 ## Goal
 
 Arduino sends sensor data to Python.
