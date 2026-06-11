@@ -1,0 +1,16 @@
+Test Summary V2
+
+Added:
+- PASS counter
+- FAIL counter
+- UNKNOWN counter
+- Total records counter
+- Summary printed at the end of the test
+- Summary saved into CSV
+
+Important:
+arduino.reset_input_buffer() clears old Serial data before starting the test.
+This avoids incomplete first messages like "US=OK" instead of "STATUS=OK".
+
+Result:
+The program can now run a test, log all signals, evaluate PASS/FAIL, and create a final test summary.

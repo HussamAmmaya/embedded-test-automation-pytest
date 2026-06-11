@@ -1,0 +1,20 @@
+Project: Arduino Serial Automation
+
+Goal:
+Read Serial data from Arduino using Python.
+
+Important:
+- Arduino sends data using Serial.println()
+- Python reads data using pyserial
+- Baud rate must be same in Arduino and Python: 9600
+- Serial Monitor must be closed before running Python
+- Correct COM port must be selected
+- Arduino is case-sensitive: Serial is correct, serial is wrong
+
+Current result:
+Python successfully reads LED ON / LED OFF from Arduino.
+-----------------------------------------------------------
+Print only on change:
+Use last_value to store the previous received line.
+Only print when current line != last_value.
+Diagnostic RAW print is only for debugging and should be removed later.

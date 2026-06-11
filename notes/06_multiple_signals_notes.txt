@@ -1,0 +1,20 @@
+Multiple Signals V2
+
+Arduino sends more than one signal:
+A0=number
+A1=number
+STATUS=OK
+
+Python checks the signal name first.
+
+A0 and A1:
+- value must be converted to float
+- PASS if value is between MIN_VALUE and MAX_VALUE
+
+STATUS:
+- value stays text
+- PASS if value equals OK
+
+Important:
+Do not convert STATUS value to float.
+Only convert numeric signals like A0 and A1.

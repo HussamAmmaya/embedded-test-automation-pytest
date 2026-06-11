@@ -1,0 +1,11 @@
+Old format:
+%Y-%m-%d %H:%M:%S
+
+New format:
+%Y-%m-%d %H:%M:%S.%f
+
+Used code:
+timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+
+Reason:
+Arduino sends multiple signals quickly, so milliseconds make the CSV log clearer.

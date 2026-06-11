@@ -1,0 +1,12 @@
+CSV Logging
+
+Goal:
+Save changed Serial values into a CSV file.
+
+Important:
+- import csv is used for CSV writing
+- datetime.now() adds timestamp
+- writer.writerow() writes one row
+- file.flush() saves immediately while the program is running
+- The while loop must stay inside the with open(...) block
+- If writer.writerow gives "I/O operation on closed file", indentation is wrong

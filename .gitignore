@@ -1,0 +1,14 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+venv/
+
+# Logs
+logs/*.csv
+!logs/example_log.csv
+
+# IDE files
+.idea/

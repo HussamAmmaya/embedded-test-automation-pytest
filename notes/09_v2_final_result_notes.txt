@@ -1,0 +1,18 @@
+V2 Final Result
+
+The program was tested successfully.
+
+Features:
+- Arduino sends multiple signals: A0, A1, STATUS
+- Python reads Serial data
+- Python evaluates each signal
+- A0 has limits: 300 to 700
+- A1 has limits: 200 to 600
+- STATUS is PASS if value is OK
+- CSV file is created automatically with date and time
+- Timestamp includes milliseconds
+- Test runs for 10 seconds
+- Summary is written at the end
+
+Result:
+V2 is working successfully.

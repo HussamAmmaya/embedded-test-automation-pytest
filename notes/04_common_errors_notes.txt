@@ -1,0 +1,29 @@
+Windows path error in Python
+
+Wrong:
+CSV_FILE = "D:\Python_Automation_CAN_Portfolio\03_arduino_serial_automation\logs\serial_log.csv"
+
+Correct:
+CSV_FILE = r"D:\Python_Automation_CAN_Portfolio\03_arduino_serial_automation\logs\serial_log.csv"
+
+Reason:
+Backslash \ has special meaning in Python strings.
+Use r"..." for Windows paths, or use / instead of \.
+
+--------------------------------------------------------------
+
+CSV PermissionError
+
+Error:
+PermissionError: [Errno 13] Permission denied: serial_log.csv
+
+Reason:
+The CSV file is open in Excel or another program.
+Windows blocks Python from writing to the file.
+
+Solution:
+Close the CSV file before running Python.
+Run Python first, stop the program, then open the CSV file.
+
+Alternative:
+Use a new file name like serial_log_v2.csv.

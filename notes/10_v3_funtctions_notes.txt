@@ -1,0 +1,24 @@
+V3 Functions Version
+
+Goal:
+Refactor the V2 program into functions.
+
+Functions added:
+- connect_to_arduino()
+- create_log_file_path()
+- write_header()
+- parse_line()
+- evaluate_signal()
+- get_timestamp()
+- update_counters()
+- write_summary()
+- run_test()
+
+Result:
+The program is cleaner, easier to read, easier to test, and closer to real test automation structure.
+
+Important:
+Console prints are useful during live execution.
+CSV logs are useful for documentation and later analysis.
+
+V3 completed successfully.

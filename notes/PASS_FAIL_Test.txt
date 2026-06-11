@@ -1,0 +1,16 @@
+PASS FAIL Test
+
+Goal:
+Evaluate Arduino analog value with Python.
+
+Logic:
+- Arduino sends A0=number
+- Python splits the line using "="
+- sensor = A0
+- value = numeric value
+- if value is between MIN_VALUE and MAX_VALUE -> PASS
+- otherwise -> FAIL
+
+Important:
+Use float(value) or int(value) before comparing numbers.
+Keep writer.writerow inside the valid line condition.

@@ -1,0 +1,13 @@
+CSV Header Info
+
+Console print messages do not automatically go into CSV files.
+To save test information into CSV, use writer.writerow().
+
+Saved test information:
+- Arduino connected successfully
+- Test started
+- COM port
+- Baud rate
+- Min and max limits
+
+This makes the log file understandable after the test is finished.
