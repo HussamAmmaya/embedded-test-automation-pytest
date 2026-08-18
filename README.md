@@ -1,4 +1,4 @@
-# Arduino Serial Automation
+# embedded-test-automation-pytest
 
 ## Test Workflow
 ```text
